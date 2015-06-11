@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="JasonNotes.css">
+    <title>Jason's Notes</title>
+  </head>
+  <body>
+    <div class="header-background">
+    <h1>Jason's Notes</h1>
+    
+      <div class="header-image">
+      <img src="images/wetdog.jpg" alt="a photo of a wet dog">
+      </div>
+    </div>
+    <div class="units">
+      <h2>Unit 0</h2>
+      <div class="idea-name">
+        <h3>The Web</h3>
+        <div class="idea-concept">
+          - made up of HTML pages<br>
+          - invented in early 1990s
+        </div>
+      </div>
+      <div class="idea-name">
+        <h3>Some Key Terms</h3>
+        <div class="idea-concept">
+          <b>HTML</b> - hypertext markup language<br>
+          <b>URLs</b> - uniform resource locator<br>
+          <b>HTTP</b> - hypertext transfer protocol<br>
+          <b>Web Application</b> - any software that runs in the web browser
+        </div>
+      </div>
+      <div class="idea-name">
+        <h3>HTML Tags &amp; Elements</h3>
+        <div class="idea-concept">
+          <p>
+              - The structure of an element looks like this:<br>
+              <br>
+              <span class="code">&lt;tag attr="value"&gt; contents &lt;/tag&gt;</span>
+          </p>
+          <p>
+              <b>Anchor</b> tags are used to include links. They look and work like this:<br>
+              <br>
+              <span class="code">&lt;a&gt;</span><br>
+              <span class="code">&lt;a href="www.example.com"&gt;example&lt;/a&gt;</span>
+          </p>  
+          <p>
+              <b>Images</b> can be displayed with the image tag. They are a <b>void tag</b> because they do not have closing tags. It's good to add an alt attribute to help if the image does not load and if people with impaired vision are visiting the site with a site reader. They look and work like this:<br>
+              <br>
+              <span class="code">&lt;img&gt;</span><br>
+              <span class="code">&lt;img src="url" alt="text"&gt;</span>
+          </p>
+        </div>
+      </div>
+      <div class="idea-name">
+        <h3>Inline vs Block Elements</h3>
+        <div class="idea-concept">
+          <p>
+              - HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them.
+          </p>
+          <p>
+              - Some examples of <b>inline</b> tags are: a, br, em, img, span
+          </p>
+          <p>
+              - Some examples of <b>block</b> tags are: div, h1, p
+          </p>  
+        </div>
+      </div>
+      <div class="idea-name">
+        <h3>Structure of HTML Page</h3>
+        <div class="idea-concept">
+          <p>
+              The structure of an HTML page should look like:<br>
+              <br>
+              <span class="code">
+                &lt;!DOCTYPE HTML&gt;<br>
+              &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;/body&gt;<br>
+              &lt;/html&gt;<br>
+            </span>
+          </p>
+          <p>
+              - In addition to this structure, structured code refers to the layout of code. It refers to the DOM, or the branches of the HTML. 
+          </p>
+          <p>
+              - Semantics within HTML is the practice of giving content on the page meaning and structure by using the proper element. Semantic code describes the value of content on a page, regardless of the style or appearance of that content.
+          </p>  
+        </div>
+      </div>
+       <div class="idea-name">
+        <h3>Stages of Learning</h3>
+        <div class="idea-concept">
+          <p>
+              - There are four stages of learning and it takes years to get to fluency. The stages are:<br>
+              <br>
+              0 - Ignorance<br>
+              1 - Awareness<br>
+              2 - Ability<br>
+              3 - Fluency
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="units">
+      <h2>Unit 1</h2>
+      <div class="idea-name">
+        <h3>Some Key Terms and Ideas</h3>
+        <div class="idea-concept">
+          <p>
+              <b>HTML</b> - is used for structure<br>
+              <b>CSS</b> - or <em>cascading style sheets</em> is used for style<br>
+              <b>DOM</b> - or <em>document object model</em> refers to the HTML tree, which one can see in dev tools (such as Google's Developer Tools in Chrome)
+          </p>  
+          <p>
+              - Everything is a box. It's helpful to break down webpages into seperate boxes or divs to help visualize the code.
+          </p>
+          <p>
+              - <b>DIVs</b> need classes to help label them. This will help when adding CSS to certain divs or elements. 
+          </p>
+          <p>
+              <b>- Avoid repetition to make your life easier.</b> 
+          </p>
+          <p> 
+              - <b>DRY</b> = Don't Repeat Yourself. This is important and helpful for organization and readable code. By being organized and not repeating code it's easier to edit and figure out an issue with a project.
+              <br>
+              <br>
+              - Group reusable css properties together<br>
+              - Name these groups logically<br>
+              - Add your selectors to the various css groups
+          </p>  
+        </div>
+      </div>
+        <div class="idea-name">
+        <h3>Some CSS Things to Know</h3>
+        <div class="idea-concept">
+          <p>
+              - If you want to select a class you can use ."classname" in the CSS sheet. For IDs use #.
+          </p>  
+          <p>
+              <b>Margin</b> - outer layer<br>
+              <b>Border</b> - border inside margin but around padding<br>
+              <b>Padding</b> - gutter around content<br>
+              <b>Content</b> - very center
+          </p>
+          <p>
+              - Since <b>DIVs</b> are block elements (as opposed to inline), by default they take up the entire width of a page.<br>
+              <br>
+              - Adding the rule <b>display: flex</b> to the appropriate CSS wil override this behavior and let DIVs apppear next to each other
+          </p>
+        </div>
+      </div>
+      <div class="idea-name">
+        <h3>box-sizing: border-box</h3>
+        <div class="idea-concept">
+          <p>
+              - Makes it so the element size include border and padding, size of the box will always stay the same when border and padding is tweaked. Kind of like holding SHIFT in PSD.<br>
+              <br>
+              - Because it's new you need to make sure browsers are compatible.<br>
+
+          </p>  
+          <p>
+              - For graceful degradation one must account for all browsers:<br>
+              <br>
+              <span class="code">
+                -webkit-box-sizing: border-box;<br>
+              -moz-box-sizing: border-box;<br>
+              -ms-box-sizing: border-box;<br>
+              box-sizing: border-box;
+            </span>
+          </p>
+        </div>
+      </div>
+      </div>
+    <div class="units">
+      <h2>Unit 2</h2>
+      <div class="idea-name">
+        <h3>Computer Science</h3>
+        <div class="idea-concept">
+          <p>
+              - Computer Science is about how to solve problems by breaking them down into smaller pieces and precisely and mechanincally describing a sequence of steps to solve each piece and can be executed by a computer.
+          </p>
+          <p>
+              - Programming is the core of computer science
+          </p>        
+        </div>
+      </div>  
+      <div class="idea-name">
+        <h3>Some Key Terms</h3>
+        <div class="idea-concept">
+          <p>
+              - <b>computer</b> - universal machine that can be programmed to do any computation
+          </p>
+          <p>
+              - <b>program</b> - precise sequence of steps that a computer can follow to do something useful. Web browsers, games, mobile apps, and simple print statements are all examples of computer programs.
+          </p>
+          <p>
+              - <b>precise sequence of steps</b> - computer itself doesn't know how to do anything. This is important to make a program useful.
+          </p>
+          <p>
+              - <b>computation</b> - technically it is the action of mathematical calculation, or in the sense of programming it's the act of computing
+          </p>
+          <p>
+              - <b>high-level language</b> - like Python
+          </p>
+          <p>
+              - <b>input</b> - as in information fed into a program, which then is run by the computer
+          </p>
+          <p>
+              - <b>interpreter</b> - (like Python) runs the program, interprets it, and executes the program in a language the computer can understand
+          </p>
+          <p>
+              - <b>procedural thinking</b> - for example "...follows the instructions in your code" is a way to think like a programmer
+          </p>
+          <p>
+              - <b>abstract thinking</b> - an example would be thinking of a Python program, a Python interpreter, and a web browser as different versions of the same thing (a computer program)
+          </p>
+          <p>
+              - <b>Compiler</b> - a program that produces other programs. It does all the work at once and then runs the program. An interpreter does this all tat the same time. 
+          </p>  
+        </div>
+      </div>  
+      <div class="idea-name">
+        <h3>Natural Languages Vs Computer Programming Language</h3>
+        <div class="idea-concept">
+          <p>
+              - Natural languages have ambiguity. People understand things in different ways.<br>
+              - Natural languages are also very verbose<br>
+              - Computer programming languages allow for shorter commands / lines of codes to make the computer do a precise thing.
+          </p>      
+        </div>
+      </div>
+      <div class="idea-name">
+        <h3>Backus-Naur Form</h3>
+        <div class="idea-concept">
+          <p>
+              - Created by John Backus, who worked for IBM and created Fortran<br>
+              - Non-terminals are replaced until they reach terminal
+          </p>      
+        </div>
+      </div>    
+      <div class="idea-name">
+        <h3>Python</h3>
+        <div class="idea-concept">
+          <p>
+              - In Python a "command" is followed by an "expression". 
+          </p>
+          <p>
+              - Code must match the language grammer exactly, if it does not match it's "invalid syntax"
+          </p>
+          <p>
+              - Python grammer for arithmetic expressions:<br>
+              <br>
+              Expression = Expression Operator Expression<br>
+              Expression = Number<br>
+              Operator = +<br>
+              Operator = *<br>
+              Number = 1, 2, 3, ...<br>
+              Expression = (Expression)
+          </p>
+          <p>
+              - If all numbers are integers Python will truncate to the nearest integer. If a more precise number is wanted you should have one number be a decimal.
+          </p>      
+        </div>
+      </div>  
+      <div class="idea-name">
+        <h3>Search Engines</h3>
+        <div class="idea-concept">
+          <p>
+              - The three main pieces to search engines are: <br>
+              <br>
+              1. Find data<br>
+              2. Build an index<br>
+              3. Rank pages
+          </p>      
+        </div>
+      </div> 
+      <div class="idea-name">
+        <h3>Variables</h3>
+        <div class="idea-concept">
+          <p>
+              - One of the most important topics in all of programming
+          </p>
+          <p>
+              - We can use a variable to create a name and the name then refers to the variable. The value is assigned to a variable and then is represented.
+          </p>  
+          <p>
+              - Assignment statment:<br>
+              <span class="code">&lt;Name&gt; = &lt;Expression&gt;</span>
+          </p>  
+          <p>
+              - The <span class="code">=</span> sign in programming is like an arrow pointing a name to the expression.
+          </p>     
+          <p>
+              - Variables can vary. We can change the value of valuables.
+          </p>  
+        </div>
+      </div>   
+      <div class="idea-name">
+        <h3>Strings</h3>
+        <div class="idea-concept">
+          <p>
+              - A sequence of characters surronded by quotes.
+          </p>  
+          <p>
+              - Without quotes the string looks and will be interpreted as a variable.
+          </p>    
+          <p>
+              - <span class="code">&lt;string&gt; + &lt;string&gt;</span> is the concatenatin of the two strings.
+          </p>  
+          <p>
+              - We can not add number and strings together, but we can multiply them.
+          </p> 
+          <p>
+              - One thing that we can do with strings that we can't do with numbers is extract subsequences.
+          </p>     
+          <p>
+              - In addition to single quotes or double quotes to create a string, you can also you TRIPLE quotes to create a multi-line string.
+          </p>
+          <p>
+              - Indexing Strings:<br>
+                <span class="code">&lt;string&gt;[&lt;expression&gt;]</span>
+          </p>
+          <p>
+              - Selecting Sub-sequences:<br>
+              <span class="code">&lt;string&gt;[&lt;expression&gt;:&lt;expression&gt;]</span>
+          </p>
+        </div>
+      </div>   
+       <div class="idea-name">
+       <h3>What is the difference between 2 + 2 and "2" + "2"?</h3>
+        <div class="idea-concept">
+          <p>
+              In Python, 2 is a number while "2" is a string. <br>
+              <br>
+              The code <span class="code">2 + 2</span> would give <span class"code">4</span>.<br>
+              <br>
+              The code <span class="code">"2" + "2"</span> would give <span class="code">"22"</span>.<br>
+              
+          </p>      
+        </div>
+      </div> 
+      <div class="idea-name">
+        <h3>Find</h3>
+        <div class="idea-concept">
+          <p>
+              - A <b>method</b>. A built in procedure in Python.
+          </p>   
+          <p>
+              - Will output the number that gives first position in search string where the target string appears.
+          </p>   
+          <p>
+              - If target string is not found, the output will be -1
+          </p>
+          <p>
+              - <b>Parameters</b> are what goes inside the parentheses.
+          </p>
+          <p>
+              - example: <span class="code">"text".find("t", 1)</span><br>
+              - "t" and 1 are parameters
+          </p>
+        </div>
+      </div>       
+      <div class="idea-name">
+        <h3>Functions</h3>
+        <div class="idea-concept">
+          <p>
+              - Or sometimes referred to as <b>Procedures</b>.
+          </p>   
+          <p>
+              - Functions are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. These parameters will eventually be replaced by actual values when the function is used (called).
+          </p>
+          <p>
+              - Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again.
+          </p>  
+          <p>
+              - Structure wise they look like:<br>
+              <span class="code">def parameter(function)</span>
+          </p>   
+          <p>
+              - Example:<br>
+              <span class="code">
+              def say_hello(name)<br>
+              greeting = "Hello" + name + "!"<br>
+              return greeting<br>
+              <br>
+              print say_hello("Miriam")<br>
+              print say_hello("Andy")
+            </span>
+          </p>
+          <p>
+              - The <span class="code">return</span> keyword tells Python exactly what the function should produce as output. If a function doesn't have a <span class="code">return</span> statement, then the interpreter will print <span class="code">None</span>.
+          </p>
+        </div>
+      </div>  
+       <div class="idea-name">
+        <h3>Inputs and Outputs</h3>
+        <div class="idea-concept">
+          <p>
+              - Procedures are like the mapping of inputs and outputs
+          </p>   
+        </div>
+      </div>      
+      <div class="idea-name">
+        <h3>Making Decisions</h3>
+        <div class="idea-concept">
+          <p>
+              - <span class="code">&lt;number&gt; &lt;operator&gt; &lt;number&gt;</span>
+              <br>
+               &nbsp;&nbsp;&nbsp;- example: 2 > 1
+               <br>
+                &nbsp;&nbsp;&nbsp;- output of a comparison is not a number, but a boolean value
+          </p>   
+          <p>
+                - <b>Boolean</b> value: it is eaither True or False
+                <br>
+                - != (not equal to)
+                <br>
+                - == (equal to)
+                <br>
+                 - we use = to assign and == to make eqaulity comparison
+          </p>
+        </div>
+      </div>      
+      <div class="idea-name">
+        <h3>If Statements</h3>
+        <div class="idea-concept">
+          <p>
+               - <span class="code">if &lt;TestExpression&gt;:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; &lt;Block&gt;</span>
+          </p>   
+          <p>
+                - We know the end of the if because of indentation. The next statement not indented will be executed whether or not the TestExpression is True.
+          </p>
+        </div>
+      </div> 
+      <div class="idea-name">
+        <h3>Or Statements</h3>
+        <div class="idea-concept">
+          <p>
+               - <span class="code">&lt;expression&gt; or &lt;expression&gt;</span>
+          </p>   
+          <p>
+                - If the first expression evaluates to True, the value is True and the second expression is not evaluated.
+          </p>
+          <p>
+                - If the first expression evaluates to False, the value is the value of the second expression.
+          </p>  
+        </div>
+      </div>    
+      <div class="idea-name">
+        <h3>Loop</h3>
+        <div class="idea-concept">
+          <p>
+               - <span class="code">while &lt;TestExpression&gt;:<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Block&gt;</span>
+          </p>   
+          <p>
+                - Block keeps running as long as true
+          </p>
+          <p>
+                - Break
+                <br>
+                &nbsp;&nbsp;&nbsp;- if break test is true excute break and jump out of loop and jump to code after the while
+          </p>  
+        </div>
+      </div>   
+       <div class="idea-name">
+        <h3>Debugging</h3>
+        <div class="idea-concept">
+          <p>
+               - When Python code crashes the error it gives is a Traceback.<br>
+               <br>
+               - The line number and focus name gives a hint to what went wrong up stream<br>
+               <br>
+               - It helps to place Print statements within code to find where something went wrong. Going through code and adding Print statements to see what is being printed is helpful.<br>
+               <br>
+               - Sometimes it's helpful to just comment out lines of code by placing a # in front of the line<br>
+               <br>
+               - Strategy recap<br>
+                  &nbsp;&nbsp;- Examine error messages when program crashes<br>
+                  &nbsp;&nbsp;- Work from example code<br>
+                  &nbsp;&nbsp;- Make sure examples work<br>
+                  &nbsp;&nbsp;- Check (print) intermediate results<br>
+                  &nbsp;&nbsp;- Keep and compare old versions
+          </p>   
+        </div>
+      </div>  
+      <div class="idea-name">
+           <h3>Modular Code</h3>
+           <div class="idea-concept">
+               <p> 
+                  - "data" is separated from its visual presentation so you can change one without worrying about the other.
+
+               </p>
+           </div>
+        </div>
+        <div class="idea-name">
+           <h3>List</h3>
+           <div class="idea-concept">
+               <p> 
+                  - <span class="code">&lt;list&gt; [&lt;expression&gt;, &lt;expression&gt;, ...]</span>
+                  - Sequence of anything, in comparison to a String which is a sequence of characters<br>
+                    &nbsp;&nbsp;- both are Structured Data<br>
+                  - Supports Mutation<br>
+                    -&nbsp;&nbsp; Allows for modification of lists<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- example: p[1] = 'thing'<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp; - The number 1 slot in the p list will be replaced with 'thing'
+               </p>
+           </div>
+        </div>
+        <div class="idea-name">
+           <h3>Aliasing</h3>
+           <div class="idea-concept">
+               <p> 
+                   - When you have two different ways to refer to the same object
+               </p>
+           </div>
+        </div>
+        <div class="idea-name">
+           <h3>List Operations</h3>
+           <div class="idea-concept">
+               <p> 
+                  - Append<br>
+                    &nbsp;&nbsp;- Will add an element to the end of a list<br>
+                    &nbsp;&nbsp;- <span class="code">&lt;list&gt;.append(&lt;element&gt;)</span><br>
+                  - +<br>
+                    &nbsp;&nbsp;- It produces a new list, it does not mutate<br>
+                    &nbsp;&nbsp;- <span class="code">&lt;list&gt; + &lt;list&gt;</span><br>
+                  - len<br>
+                    &nbsp;&nbsp;- short for length. We pass into len the object we want to know the length of.<br>
+                    &nbsp;&nbsp;- <span class"code">len(&lt;list&gt;)</span><br>
+                  - Difference between append and + is that append will add one item to the list, while += will copy all elements of right-hand-side list into the left-hand-side list.
+               </p>
+           </div>
+        </div>
+        <div class="idea-name">
+           <h3>Loops on Lists</h3>
+           <div class="idea-concept">
+               <p> 
+                   - for loops<br>
+                    &nbsp;&nbsp;- <span class="code">for &lt;name&gt; in &lt;list&gt;:<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;block&gt;</span>
+               </p>
+           </div>
+        </div>
+        <div class="idea-name">
+           <h3>.index Method</h3>
+           <div class="idea-concept">
+               <p> 
+                    - <span class="code">&lt;list&gt;.index(&lt;value&gt;)</span><br>
+                       &nbsp;&nbsp;- if &lt;value&gt; is in the &lt;list&gt;, returns the first position where &lt;value&gt; is found in &lt;list&gt;. Otherwise it produces an error.
+               </p>
+           </div>
+        </div>
+            <div class="idea-name">
+           <h3>in</h3>
+           <div class="idea-concept">
+               <p> 
+                   - <span class="code">&lt;value&gt; in &lt;list&gt;</span><br>
+                     &nbsp;&nbsp;- example: 3 in p<br>
+                     &nbsp;&nbsp;- If &lt;value&gt; is in the &lt;list&gt;, output is True. Otherwise the output is False
+               </p>
+           </div>
+        </div>
+        <div class="idea-name">
+           <h3>not in</h3>
+           <div class="idea-concept">
+               <p> 
+                  - <span class="code">&lt;value&gt; not in &lt:list&gt;</span>
+               </p>
+           </div>
+        </div>
+        <div class="idea-name">
+           <h3>Solving Problems</h3>
+           <div class="idea-concept">
+               <p> 
+                     -What are the inputs?<br>
+                     -What are the outputs?<br>
+                     -Work through some examples by hand<br>
+                     -Simple mechanical solution<br>
+                     -Develop incrementally and test as we go
+               </p>
+           </div>
+        </div>
+    </div>
+  </body>
+</html>
+
+
